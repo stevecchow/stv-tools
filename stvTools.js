@@ -1,10 +1,9 @@
 /**
  * @license
- * StvTools <https://stvTools.com/>
- * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
- * Released under MIT license <https://stvTools.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ * StvTools 
+ * Released under MIT license
+ * Based on lodash.js 1.8.3 <http://lodash.com/LICENSE>
+ * Copyright stevechow
  */
 ;(function() {
 
