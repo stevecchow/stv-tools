@@ -2,7 +2,7 @@
  * @license
  * StvTools 
  * Released under MIT license
- * Based on lodash.js 1.8.3 <http://lodash.com/LICENSE>
+ * Based on lodash.js 4.17.21 <http://lodash.com/LICENSE>
  * Copyright stevechow
  */
 ;(function() {
@@ -11,7 +11,7 @@
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.21';
+  var VERSION = '1.0.3';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
