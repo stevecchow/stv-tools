@@ -1,39 +1,35 @@
-# lodash v4.17.21
+# stv-tools v1.0.0
 
-The [Lodash](https://lodash.com/) library exported as [Node.js](https://nodejs.org/) modules.
+The stv-tools library exported as [Node.js](https://nodejs.org/) modules.
 
 ## Installation
 
 Using npm:
 ```shell
 $ npm i -g npm
-$ npm i --save lodash
+$ npm i --save stv-tools
 ```
 
 In Node.js:
 ```js
 // Load the full build.
-var _ = require('lodash');
+var _ = require('stvTools');
 // Load the core build.
-var _ = require('lodash/core');
+var _ = require('stvTools/core');
 // Load the FP build for immutable auto-curried iteratee-first data-last methods.
-var fp = require('lodash/fp');
+var fp = require('stvTools/fp');
 
 // Load method categories.
-var array = require('lodash/array');
-var object = require('lodash/fp/object');
+var array = require('stvTools/array');
+var object = require('stvTools/fp/object');
 
 // Cherry-pick methods for smaller browserify/rollup/webpack bundles.
-var at = require('lodash/at');
-var curryN = require('lodash/fp/curryN');
+var at = require('stvTools/at');
+var curryN = require('stvTools/fp/curryN');
 ```
 
-See the [package source](https://github.com/lodash/lodash/tree/4.17.21-npm) for more details.
-
-**Note:**<br>
-Install [n_](https://www.npmjs.com/package/n_) for Lodash use in the Node.js < 6 REPL.
+See the [package source](https://github.com/stevecchow/stv-tools) for more details.
 
 ## Support
 
 Tested in Chrome 74-75, Firefox 66-67, IE 11, Edge 18, Safari 11-12, & Node.js 8-12.<br>
-Automated [browser](https://saucelabs.com/u/lodash) & [CI](https://travis-ci.org/lodash/lodash/) test runs are available.
