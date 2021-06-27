@@ -8,7 +8,7 @@ var MAX_SAFE_INTEGER = 9007199254740991;
 /** Used as references for the maximum length and index of an array. */
 var MAX_ARRAY_LENGTH = 4294967295;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

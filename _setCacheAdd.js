@@ -1,5 +1,5 @@
 /** Used to stand-in for `undefined` hash values. */
-var HASH_UNDEFINED = '__lodash_hash_undefined__';
+var HASH_UNDEFINED = '__stvTools_hash_undefined__';
 
 /**
  * Adds `value` to the array cache.

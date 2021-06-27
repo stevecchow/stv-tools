@@ -1,6 +1,6 @@
 var root = require('./_root');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeIsFinite = root.isFinite;
 
 /**

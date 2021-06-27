@@ -1,5 +1,5 @@
 var LazyWrapper = require('./_LazyWrapper'),
-    LodashWrapper = require('./_LodashWrapper'),
+    StvToolsWrapper = require('./_StvToolsWrapper'),
     reverse = require('./reverse'),
     thru = require('./thru');
 
@@ -12,7 +12,7 @@ var LazyWrapper = require('./_LazyWrapper'),
  * @memberOf _
  * @since 0.1.0
  * @category Seq
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * var array = [1, 2, 3];
@@ -36,7 +36,7 @@ function wrapperReverse() {
       'args': [reverse],
       'thisArg': undefined
     });
-    return new LodashWrapper(wrapped, this.__chain__);
+    return new StvToolsWrapper(wrapped, this.__chain__);
   }
   return this.thru(reverse);
 }

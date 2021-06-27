@@ -12,7 +12,7 @@ var arrayReduce = require('./_arrayReduce'),
  * value. The iteratee is invoked with four arguments:
  * (accumulator, value, index|key, collection).
  *
- * Many lodash methods are guarded to work as iteratees for methods like
+ * Many stvTools methods are guarded to work as iteratees for methods like
  * `_.reduce`, `_.reduceRight`, and `_.transform`.
  *
  * The guarded methods are:

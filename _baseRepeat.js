@@ -1,7 +1,7 @@
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeFloor = Math.floor;
 
 /**

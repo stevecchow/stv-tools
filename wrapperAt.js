@@ -1,5 +1,5 @@
 var LazyWrapper = require('./_LazyWrapper'),
-    LodashWrapper = require('./_LodashWrapper'),
+    StvToolsWrapper = require('./_StvToolsWrapper'),
     baseAt = require('./_baseAt'),
     flatRest = require('./_flatRest'),
     isIndex = require('./_isIndex'),
@@ -13,7 +13,7 @@ var LazyWrapper = require('./_LazyWrapper'),
  * @since 1.0.0
  * @category Seq
  * @param {...(string|string[])} [paths] The property paths to pick.
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
@@ -37,7 +37,7 @@ var wrapperAt = flatRest(function(paths) {
     'args': [interceptor],
     'thisArg': undefined
   });
-  return new LodashWrapper(value, this.__chain__).thru(function(array) {
+  return new StvToolsWrapper(value, this.__chain__).thru(function(array) {
     if (length && !array.length) {
       array.push(undefined);
     }

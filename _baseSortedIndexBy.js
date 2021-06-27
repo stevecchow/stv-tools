@@ -4,7 +4,7 @@ var isSymbol = require('./isSymbol');
 var MAX_ARRAY_LENGTH = 4294967295,
     MAX_ARRAY_INDEX = MAX_ARRAY_LENGTH - 1;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeFloor = Math.floor,
     nativeMin = Math.min;
 

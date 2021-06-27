@@ -7,7 +7,7 @@ var apply = require('./_apply'),
     castRest = require('./_castRest'),
     isArray = require('./isArray');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

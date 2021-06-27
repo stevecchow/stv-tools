@@ -1,5 +1,5 @@
 /** Used as the internal argument placeholder. */
-var PLACEHOLDER = '__lodash_placeholder__';
+var PLACEHOLDER = '__stvTools_placeholder__';
 
 /**
  * Replaces all `placeholder` elements in `array` with an internal placeholder

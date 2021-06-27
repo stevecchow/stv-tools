@@ -11,14 +11,14 @@ var arrayEach = require('./_arrayEach'),
  * object to the destination object. If `object` is a function, then methods
  * are added to its prototype as well.
  *
- * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+ * **Note:** Use `_.runInContext` to create a pristine `stvTools` function to
  * avoid conflicts caused by modifying the original.
  *
  * @static
  * @since 0.1.0
  * @memberOf _
  * @category Util
- * @param {Function|Object} [object=lodash] The destination object.
+ * @param {Function|Object} [object=stvTools] The destination object.
  * @param {Object} source The object of functions to add.
  * @param {Object} [options={}] The options object.
  * @param {boolean} [options.chain=true] Specify whether mixins are chainable.

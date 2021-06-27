@@ -4,7 +4,7 @@ var root = require('./_root'),
 /** Used to match leading whitespace. */
 var reTrimStart = /^\s+/;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeParseInt = root.parseInt;
 
 /**

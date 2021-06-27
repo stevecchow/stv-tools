@@ -4,7 +4,7 @@ var arrayFilter = require('./_arrayFilter'),
     baseTimes = require('./_baseTimes'),
     isArrayLikeObject = require('./isArrayLikeObject');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMax = Math.max;
 
 /**

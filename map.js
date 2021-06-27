@@ -8,7 +8,7 @@ var arrayMap = require('./_arrayMap'),
  * `iteratee`. The iteratee is invoked with three arguments:
  * (value, index|key, collection).
  *
- * Many lodash methods are guarded to work as iteratees for methods like
+ * Many stvTools methods are guarded to work as iteratees for methods like
  * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
  *
  * The guarded methods are:

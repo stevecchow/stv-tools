@@ -1,7 +1,7 @@
-var lodash = require('./wrapperLodash');
+var stvTools = require('./wrapperStvTools');
 
 /**
- * Creates a `lodash` wrapper instance that wraps `value` with explicit method
+ * Creates a `stvTools` wrapper instance that wraps `value` with explicit method
  * chain sequences enabled. The result of such sequences must be unwrapped
  * with `_#value`.
  *
@@ -10,7 +10,7 @@ var lodash = require('./wrapperLodash');
  * @since 1.3.0
  * @category Seq
  * @param {*} value The value to wrap.
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * var users = [
@@ -30,7 +30,7 @@ var lodash = require('./wrapperLodash');
  * // => 'pebbles is 1'
  */
 function chain(value) {
-  var result = lodash(value);
+  var result = stvTools(value);
   result.__chain__ = true;
   return result;
 }

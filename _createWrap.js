@@ -20,7 +20,7 @@ var WRAP_BIND_FLAG = 1,
     WRAP_PARTIAL_FLAG = 32,
     WRAP_PARTIAL_RIGHT_FLAG = 64;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMax = Math.max;
 
 /**

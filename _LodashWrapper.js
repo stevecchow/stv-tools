@@ -1,14 +1,14 @@
 var baseCreate = require('./_baseCreate'),
-    baseLodash = require('./_baseLodash');
+    baseStvTools = require('./_baseStvTools');
 
 /**
- * The base constructor for creating `lodash` wrapper objects.
+ * The base constructor for creating `stvTools` wrapper objects.
  *
  * @private
  * @param {*} value The value to wrap.
  * @param {boolean} [chainAll] Enable explicit method chain sequences.
  */
-function LodashWrapper(value, chainAll) {
+function StvToolsWrapper(value, chainAll) {
   this.__wrapped__ = value;
   this.__actions__ = [];
   this.__chain__ = !!chainAll;
@@ -16,7 +16,7 @@ function LodashWrapper(value, chainAll) {
   this.__values__ = undefined;
 }
 
-LodashWrapper.prototype = baseCreate(baseLodash.prototype);
-LodashWrapper.prototype.constructor = LodashWrapper;
+StvToolsWrapper.prototype = baseCreate(baseStvTools.prototype);
+StvToolsWrapper.prototype.constructor = StvToolsWrapper;
 
-module.exports = LodashWrapper;
+module.exports = StvToolsWrapper;

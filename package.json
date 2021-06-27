@@ -14,9 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/stevecchow/stv-tools.git"
   },
-  "icon": "https://lodash.com/icon.svg",
+  "icon": "https://stvTools.com/icon.svg",
   "license": "MIT",
-  "main": "lodash.js",
+  "main": "stvTools.js",
   "author": "Steve-Chow <zhmnda@icloud.com>",
   "contributors": [
     "Steve-Chow <zhmnda@icloud.com>"

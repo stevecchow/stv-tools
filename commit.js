@@ -1,4 +1,4 @@
-var LodashWrapper = require('./_LodashWrapper');
+var StvToolsWrapper = require('./_StvToolsWrapper');
 
 /**
  * Executes the chain sequence and returns the wrapped result.
@@ -7,7 +7,7 @@ var LodashWrapper = require('./_LodashWrapper');
  * @memberOf _
  * @since 3.2.0
  * @category Seq
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * var array = [1, 2];
@@ -27,7 +27,7 @@ var LodashWrapper = require('./_LodashWrapper');
  * // => [1, 2, 3]
  */
 function wrapperCommit() {
-  return new LodashWrapper(this.value(), this.__chain__);
+  return new StvToolsWrapper(this.value(), this.__chain__);
 }
 
 module.exports = wrapperCommit;

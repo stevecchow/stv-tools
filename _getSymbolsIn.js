@@ -3,7 +3,7 @@ var arrayPush = require('./_arrayPush'),
     getSymbols = require('./_getSymbols'),
     stubArray = require('./stubArray');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeGetSymbols = Object.getOwnPropertySymbols;
 
 /**

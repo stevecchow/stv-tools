@@ -3,7 +3,7 @@ var createPadding = require('./_createPadding'),
     toInteger = require('./toInteger'),
     toString = require('./toString');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeCeil = Math.ceil,
     nativeFloor = Math.floor;
 

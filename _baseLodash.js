@@ -3,8 +3,8 @@
  *
  * @private
  */
-function baseLodash() {
+function baseStvTools() {
   // No operation performed.
 }
 
-module.exports = baseLodash;
+module.exports = baseStvTools;

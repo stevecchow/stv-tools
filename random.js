@@ -5,7 +5,7 @@ var baseRandom = require('./_baseRandom'),
 /** Built-in method references without a dependency on `root`. */
 var freeParseFloat = parseFloat;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min,
     nativeRandom = Math.random;
 

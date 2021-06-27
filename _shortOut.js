@@ -2,7 +2,7 @@
 var HOT_COUNT = 800,
     HOT_SPAN = 16;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeNow = Date.now;
 
 /**

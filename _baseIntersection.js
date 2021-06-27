@@ -5,7 +5,7 @@ var SetCache = require('./_SetCache'),
     baseUnary = require('./_baseUnary'),
     cacheHas = require('./_cacheHas');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

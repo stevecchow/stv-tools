@@ -1,7 +1,7 @@
 var baseIndexOf = require('./_baseIndexOf'),
     toInteger = require('./toInteger');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMax = Math.max;
 
 /**

@@ -7,7 +7,7 @@ var apply = require('./_apply'),
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMax = Math.max;
 
 /**

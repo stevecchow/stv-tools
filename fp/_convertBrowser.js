@@ -1,15 +1,15 @@
 var baseConvert = require('./_baseConvert');
 
 /**
- * Converts `lodash` to an immutable auto-curried iteratee-first data-last
+ * Converts `stvTools` to an immutable auto-curried iteratee-first data-last
  * version with conversion `options` applied.
  *
- * @param {Function} lodash The lodash function to convert.
+ * @param {Function} stvTools The stvTools function to convert.
  * @param {Object} [options] The options object. See `baseConvert` for more details.
- * @returns {Function} Returns the converted `lodash`.
+ * @returns {Function} Returns the converted `stvTools`.
  */
-function browserConvert(lodash, options) {
-  return baseConvert(lodash, lodash, options);
+function browserConvert(stvTools, options) {
+  return baseConvert(stvTools, stvTools, options);
 }
 
 if (typeof _ == 'function' && typeof _.runInContext == 'function') {

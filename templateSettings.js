@@ -4,7 +4,7 @@ var escape = require('./escape'),
     reInterpolate = require('./_reInterpolate');
 
 /**
- * By default, the template delimiters used by lodash are like those in
+ * By default, the template delimiters used by stvTools are like those in
  * embedded Ruby (ERB) as well as ES2015 template strings. Change the
  * following template settings to use alternative delimiters.
  *
@@ -55,7 +55,7 @@ var templateSettings = {
   'imports': {
 
     /**
-     * A reference to the `lodash` function.
+     * A reference to the `stvTools` function.
      *
      * @memberOf _.templateSettings.imports
      * @type {Function}

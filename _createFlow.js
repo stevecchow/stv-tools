@@ -1,4 +1,4 @@
-var LodashWrapper = require('./_LodashWrapper'),
+var StvToolsWrapper = require('./_StvToolsWrapper'),
     flatRest = require('./_flatRest'),
     getData = require('./_getData'),
     getFuncName = require('./_getFuncName'),
@@ -25,7 +25,7 @@ function createFlow(fromRight) {
   return flatRest(function(funcs) {
     var length = funcs.length,
         index = length,
-        prereq = LodashWrapper.prototype.thru;
+        prereq = StvToolsWrapper.prototype.thru;
 
     if (fromRight) {
       funcs.reverse();
@@ -36,7 +36,7 @@ function createFlow(fromRight) {
         throw new TypeError(FUNC_ERROR_TEXT);
       }
       if (prereq && !wrapper && getFuncName(func) == 'wrapper') {
-        var wrapper = new LodashWrapper([], true);
+        var wrapper = new StvToolsWrapper([], true);
       }
     }
     index = wrapper ? index : length;

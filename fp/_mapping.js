@@ -1,7 +1,7 @@
 /** Used to map aliases to their real names. */
 exports.aliasToReal = {
 
-  // Lodash aliases.
+  // StvTools aliases.
   'each': 'forEach',
   'eachRight': 'forEachRight',
   'entries': 'toPairs',

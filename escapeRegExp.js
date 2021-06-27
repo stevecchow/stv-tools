@@ -19,8 +19,8 @@ var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
  * @returns {string} Returns the escaped string.
  * @example
  *
- * _.escapeRegExp('[lodash](https://lodash.com/)');
- * // => '\[lodash\]\(https://lodash\.com/\)'
+ * _.escapeRegExp('[stvTools](https://stvTools.com/)');
+ * // => '\[stvTools\]\(https://stvTools\.com/\)'
  */
 function escapeRegExp(string) {
   string = toString(string);

@@ -1,9 +1,9 @@
 /**
  * @license
- * Lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash core -o ./dist/lodash.core.js`
+ * StvTools (Custom Build) <https://stvTools.com/>
+ * Build: `stvTools core -o ./dist/stvTools.core.js`
  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
- * Released under MIT license <https://lodash.com/license>
+ * Released under MIT license <https://stvTools.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
@@ -227,7 +227,7 @@
   var objectCreate = Object.create,
       propertyIsEnumerable = objectProto.propertyIsEnumerable;
 
-  /* Built-in method references for those with the same name as other `lodash` methods. */
+  /* Built-in method references for those with the same name as other `stvTools` methods. */
   var nativeIsFinite = root.isFinite,
       nativeKeys = overArg(Object.keys, Object),
       nativeMax = Math.max;
@@ -235,7 +235,7 @@
   /*------------------------------------------------------------------------*/
 
   /**
-   * Creates a `lodash` object which wraps `value` to enable implicit method
+   * Creates a `stvTools` object which wraps `value` to enable implicit method
    * chain sequences. Methods that operate on and return arrays, collections,
    * and functions can be chained together. Methods that retrieve a single value
    * or may return a primitive value will automatically end the chain sequence
@@ -259,7 +259,7 @@
    * Chaining is supported in custom builds as long as the `_#value` method is
    * directly or indirectly included in the build.
    *
-   * In addition to lodash methods, wrappers have `Array` and `String` methods.
+   * In addition to stvTools methods, wrappers have `Array` and `String` methods.
    *
    * The wrapper `Array` methods are:
    * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
@@ -328,8 +328,8 @@
    * @name _
    * @constructor
    * @category Seq
-   * @param {*} value The value to wrap in a `lodash` instance.
-   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @param {*} value The value to wrap in a `stvTools` instance.
+   * @returns {Object} Returns the new `stvTools` wrapper instance.
    * @example
    *
    * function square(n) {
@@ -351,10 +351,10 @@
    * _.isArray(squares.value());
    * // => true
    */
-  function lodash(value) {
-    return value instanceof LodashWrapper
+  function stvTools(value) {
+    return value instanceof StvToolsWrapper
       ? value
-      : new LodashWrapper(value);
+      : new StvToolsWrapper(value);
   }
 
   /**
@@ -382,20 +382,20 @@
   }());
 
   /**
-   * The base constructor for creating `lodash` wrapper objects.
+   * The base constructor for creating `stvTools` wrapper objects.
    *
    * @private
    * @param {*} value The value to wrap.
    * @param {boolean} [chainAll] Enable explicit method chain sequences.
    */
-  function LodashWrapper(value, chainAll) {
+  function StvToolsWrapper(value, chainAll) {
     this.__wrapped__ = value;
     this.__actions__ = [];
     this.__chain__ = !!chainAll;
   }
 
-  LodashWrapper.prototype = baseCreate(lodash.prototype);
-  LodashWrapper.prototype.constructor = LodashWrapper;
+  StvToolsWrapper.prototype = baseCreate(stvTools.prototype);
+  StvToolsWrapper.prototype.constructor = StvToolsWrapper;
 
   /*------------------------------------------------------------------------*/
 
@@ -1725,7 +1725,7 @@
   /*------------------------------------------------------------------------*/
 
   /**
-   * Creates a `lodash` wrapper instance that wraps `value` with explicit method
+   * Creates a `stvTools` wrapper instance that wraps `value` with explicit method
    * chain sequences enabled. The result of such sequences must be unwrapped
    * with `_#value`.
    *
@@ -1734,7 +1734,7 @@
    * @since 1.3.0
    * @category Seq
    * @param {*} value The value to wrap.
-   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @returns {Object} Returns the new `stvTools` wrapper instance.
    * @example
    *
    * var users = [
@@ -1754,7 +1754,7 @@
    * // => 'pebbles is 1'
    */
   function chain(value) {
-    var result = lodash(value);
+    var result = stvTools(value);
     result.__chain__ = true;
     return result;
   }
@@ -1815,13 +1815,13 @@
   }
 
   /**
-   * Creates a `lodash` wrapper instance with explicit method chain sequences enabled.
+   * Creates a `stvTools` wrapper instance with explicit method chain sequences enabled.
    *
    * @name chain
    * @memberOf _
    * @since 0.1.0
    * @category Seq
-   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @returns {Object} Returns the new `stvTools` wrapper instance.
    * @example
    *
    * var users = [
@@ -2033,7 +2033,7 @@
    * `iteratee`. The iteratee is invoked with three arguments:
    * (value, index|key, collection).
    *
-   * Many lodash methods are guarded to work as iteratees for methods like
+   * Many stvTools methods are guarded to work as iteratees for methods like
    * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
    *
    * The guarded methods are:
@@ -2082,7 +2082,7 @@
    * value. The iteratee is invoked with four arguments:
    * (accumulator, value, index|key, collection).
    *
-   * Many lodash methods are guarded to work as iteratees for methods like
+   * Many stvTools methods are guarded to work as iteratees for methods like
    * `_.reduce`, `_.reduceRight`, and `_.transform`.
    *
    * The guarded methods are:
@@ -3551,14 +3551,14 @@
    * object to the destination object. If `object` is a function, then methods
    * are added to its prototype as well.
    *
-   * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+   * **Note:** Use `_.runInContext` to create a pristine `stvTools` function to
    * avoid conflicts caused by modifying the original.
    *
    * @static
    * @since 0.1.0
    * @memberOf _
    * @category Util
-   * @param {Function|Object} [object=lodash] The destination object.
+   * @param {Function|Object} [object=stvTools] The destination object.
    * @param {Object} source The object of functions to add.
    * @param {Object} [options={}] The options object.
    * @param {boolean} [options.chain=true] Specify whether mixins are chainable.
@@ -3620,16 +3620,16 @@
 
   /**
    * Reverts the `_` variable to its previous value and returns a reference to
-   * the `lodash` function.
+   * the `stvTools` function.
    *
    * @static
    * @since 0.1.0
    * @memberOf _
    * @category Util
-   * @returns {Function} Returns the `lodash` function.
+   * @returns {Function} Returns the `stvTools` function.
    * @example
    *
-   * var lodash = _.noConflict();
+   * var stvTools = _.noConflict();
    */
   function noConflict() {
     if (root._ === this) {
@@ -3729,86 +3729,86 @@
   /*------------------------------------------------------------------------*/
 
   // Add methods that return wrapped values in chain sequences.
-  lodash.assignIn = assignIn;
-  lodash.before = before;
-  lodash.bind = bind;
-  lodash.chain = chain;
-  lodash.compact = compact;
-  lodash.concat = concat;
-  lodash.create = create;
-  lodash.defaults = defaults;
-  lodash.defer = defer;
-  lodash.delay = delay;
-  lodash.filter = filter;
-  lodash.flatten = flatten;
-  lodash.flattenDeep = flattenDeep;
-  lodash.iteratee = iteratee;
-  lodash.keys = keys;
-  lodash.map = map;
-  lodash.matches = matches;
-  lodash.mixin = mixin;
-  lodash.negate = negate;
-  lodash.once = once;
-  lodash.pick = pick;
-  lodash.slice = slice;
-  lodash.sortBy = sortBy;
-  lodash.tap = tap;
-  lodash.thru = thru;
-  lodash.toArray = toArray;
-  lodash.values = values;
+  stvTools.assignIn = assignIn;
+  stvTools.before = before;
+  stvTools.bind = bind;
+  stvTools.chain = chain;
+  stvTools.compact = compact;
+  stvTools.concat = concat;
+  stvTools.create = create;
+  stvTools.defaults = defaults;
+  stvTools.defer = defer;
+  stvTools.delay = delay;
+  stvTools.filter = filter;
+  stvTools.flatten = flatten;
+  stvTools.flattenDeep = flattenDeep;
+  stvTools.iteratee = iteratee;
+  stvTools.keys = keys;
+  stvTools.map = map;
+  stvTools.matches = matches;
+  stvTools.mixin = mixin;
+  stvTools.negate = negate;
+  stvTools.once = once;
+  stvTools.pick = pick;
+  stvTools.slice = slice;
+  stvTools.sortBy = sortBy;
+  stvTools.tap = tap;
+  stvTools.thru = thru;
+  stvTools.toArray = toArray;
+  stvTools.values = values;
 
   // Add aliases.
-  lodash.extend = assignIn;
+  stvTools.extend = assignIn;
 
-  // Add methods to `lodash.prototype`.
-  mixin(lodash, lodash);
+  // Add methods to `stvTools.prototype`.
+  mixin(stvTools, stvTools);
 
   /*------------------------------------------------------------------------*/
 
   // Add methods that return unwrapped values in chain sequences.
-  lodash.clone = clone;
-  lodash.escape = escape;
-  lodash.every = every;
-  lodash.find = find;
-  lodash.forEach = forEach;
-  lodash.has = has;
-  lodash.head = head;
-  lodash.identity = identity;
-  lodash.indexOf = indexOf;
-  lodash.isArguments = isArguments;
-  lodash.isArray = isArray;
-  lodash.isBoolean = isBoolean;
-  lodash.isDate = isDate;
-  lodash.isEmpty = isEmpty;
-  lodash.isEqual = isEqual;
-  lodash.isFinite = isFinite;
-  lodash.isFunction = isFunction;
-  lodash.isNaN = isNaN;
-  lodash.isNull = isNull;
-  lodash.isNumber = isNumber;
-  lodash.isObject = isObject;
-  lodash.isRegExp = isRegExp;
-  lodash.isString = isString;
-  lodash.isUndefined = isUndefined;
-  lodash.last = last;
-  lodash.max = max;
-  lodash.min = min;
-  lodash.noConflict = noConflict;
-  lodash.noop = noop;
-  lodash.reduce = reduce;
-  lodash.result = result;
-  lodash.size = size;
-  lodash.some = some;
-  lodash.uniqueId = uniqueId;
+  stvTools.clone = clone;
+  stvTools.escape = escape;
+  stvTools.every = every;
+  stvTools.find = find;
+  stvTools.forEach = forEach;
+  stvTools.has = has;
+  stvTools.head = head;
+  stvTools.identity = identity;
+  stvTools.indexOf = indexOf;
+  stvTools.isArguments = isArguments;
+  stvTools.isArray = isArray;
+  stvTools.isBoolean = isBoolean;
+  stvTools.isDate = isDate;
+  stvTools.isEmpty = isEmpty;
+  stvTools.isEqual = isEqual;
+  stvTools.isFinite = isFinite;
+  stvTools.isFunction = isFunction;
+  stvTools.isNaN = isNaN;
+  stvTools.isNull = isNull;
+  stvTools.isNumber = isNumber;
+  stvTools.isObject = isObject;
+  stvTools.isRegExp = isRegExp;
+  stvTools.isString = isString;
+  stvTools.isUndefined = isUndefined;
+  stvTools.last = last;
+  stvTools.max = max;
+  stvTools.min = min;
+  stvTools.noConflict = noConflict;
+  stvTools.noop = noop;
+  stvTools.reduce = reduce;
+  stvTools.result = result;
+  stvTools.size = size;
+  stvTools.some = some;
+  stvTools.uniqueId = uniqueId;
 
   // Add aliases.
-  lodash.each = forEach;
-  lodash.first = head;
+  stvTools.each = forEach;
+  stvTools.first = head;
 
-  mixin(lodash, (function() {
+  mixin(stvTools, (function() {
     var source = {};
-    baseForOwn(lodash, function(func, methodName) {
-      if (!hasOwnProperty.call(lodash.prototype, methodName)) {
+    baseForOwn(stvTools, function(func, methodName) {
+      if (!hasOwnProperty.call(stvTools.prototype, methodName)) {
         source[methodName] = func;
       }
     });
@@ -3824,15 +3824,15 @@
    * @memberOf _
    * @type {string}
    */
-  lodash.VERSION = VERSION;
+  stvTools.VERSION = VERSION;
 
-  // Add `Array` methods to `lodash.prototype`.
+  // Add `Array` methods to `stvTools.prototype`.
   baseEach(['pop', 'join', 'replace', 'reverse', 'split', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
     var func = (/^(?:replace|split)$/.test(methodName) ? String.prototype : arrayProto)[methodName],
         chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
         retUnwrapped = /^(?:pop|join|replace|shift)$/.test(methodName);
 
-    lodash.prototype[methodName] = function() {
+    stvTools.prototype[methodName] = function() {
       var args = arguments;
       if (retUnwrapped && !this.__chain__) {
         var value = this.value();
@@ -3844,34 +3844,34 @@
     };
   });
 
-  // Add chain sequence methods to the `lodash` wrapper.
-  lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
+  // Add chain sequence methods to the `stvTools` wrapper.
+  stvTools.prototype.toJSON = stvTools.prototype.valueOf = stvTools.prototype.value = wrapperValue;
 
   /*--------------------------------------------------------------------------*/
 
   // Some AMD build optimizers, like r.js, check for condition patterns like:
   if (typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
-    // Expose Lodash on the global object to prevent errors when Lodash is
+    // Expose StvTools on the global object to prevent errors when StvTools is
     // loaded by a script tag in the presence of an AMD loader.
     // See http://requirejs.org/docs/errors.html#mismatch for more details.
-    // Use `_.noConflict` to remove Lodash from the global object.
-    root._ = lodash;
+    // Use `_.noConflict` to remove StvTools from the global object.
+    root._ = stvTools;
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
     define(function() {
-      return lodash;
+      return stvTools;
     });
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
   else if (freeModule) {
     // Export for Node.js.
-    (freeModule.exports = lodash)._ = lodash;
+    (freeModule.exports = stvTools)._ = stvTools;
     // Export for CommonJS support.
-    freeExports._ = lodash;
+    freeExports._ = stvTools;
   }
   else {
     // Export to the global object.
-    root._ = lodash;
+    root._ = stvTools;
   }
 }.call(this));

@@ -13,7 +13,7 @@ var moduleExports = freeModule && freeModule.exports === freeExports;
 /** Built-in value references. */
 var Buffer = moduleExports ? root.Buffer : undefined;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined;
 
 /**

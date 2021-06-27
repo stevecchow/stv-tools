@@ -368,11 +368,11 @@ function baseConvert(util, name, func, options) {
   }
 
   /**
-   * Converts `lodash` to an immutable auto-curried iteratee-first data-last
+   * Converts `stvTools` to an immutable auto-curried iteratee-first data-last
    * version with conversion `options` applied.
    *
    * @param {Object} [options] The options object. See `baseConvert` for more details.
-   * @returns {Function} Returns the converted `lodash`.
+   * @returns {Function} Returns the converted `stvTools`.
    */
   function convertLib(options) {
     return _.runInContext.convert(options)(undefined);

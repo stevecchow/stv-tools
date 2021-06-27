@@ -5,7 +5,7 @@ var baseRepeat = require('./_baseRepeat'),
     stringSize = require('./_stringSize'),
     stringToArray = require('./_stringToArray');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeCeil = Math.ceil;
 
 /**

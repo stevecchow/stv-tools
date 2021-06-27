@@ -7,7 +7,7 @@ var objectProto = Object.prototype;
 /** Built-in value references. */
 var propertyIsEnumerable = objectProto.propertyIsEnumerable;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeGetSymbols = Object.getOwnPropertySymbols;
 
 /**

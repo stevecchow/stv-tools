@@ -3,7 +3,7 @@ var root = require('./_root'),
     toNumber = require('./toNumber'),
     toString = require('./toString');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeIsFinite = root.isFinite,
     nativeMin = Math.min;
 

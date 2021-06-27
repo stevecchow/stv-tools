@@ -6,7 +6,7 @@ var baseWrapperValue = require('./_baseWrapperValue'),
 var LAZY_FILTER_FLAG = 1,
     LAZY_MAP_FLAG = 2;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

@@ -1,4 +1,4 @@
-var baseLodash = require('./_baseLodash'),
+var baseStvTools = require('./_baseStvTools'),
     wrapperClone = require('./_wrapperClone');
 
 /**
@@ -9,7 +9,7 @@ var baseLodash = require('./_baseLodash'),
  * @since 3.2.0
  * @category Seq
  * @param {*} value The value to plant.
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * function square(n) {
@@ -29,7 +29,7 @@ function wrapperPlant(value) {
   var result,
       parent = this;
 
-  while (parent instanceof baseLodash) {
+  while (parent instanceof baseStvTools) {
     var clone = wrapperClone(parent);
     clone.__index__ = 0;
     clone.__values__ = undefined;

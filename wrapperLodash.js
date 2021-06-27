@@ -1,6 +1,6 @@
 var LazyWrapper = require('./_LazyWrapper'),
-    LodashWrapper = require('./_LodashWrapper'),
-    baseLodash = require('./_baseLodash'),
+    StvToolsWrapper = require('./_StvToolsWrapper'),
+    baseStvTools = require('./_baseStvTools'),
     isArray = require('./isArray'),
     isObjectLike = require('./isObjectLike'),
     wrapperClone = require('./_wrapperClone');
@@ -12,7 +12,7 @@ var objectProto = Object.prototype;
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Creates a `lodash` object which wraps `value` to enable implicit method
+ * Creates a `stvTools` object which wraps `value` to enable implicit method
  * chain sequences. Methods that operate on and return arrays, collections,
  * and functions can be chained together. Methods that retrieve a single value
  * or may return a primitive value will automatically end the chain sequence
@@ -36,7 +36,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * Chaining is supported in custom builds as long as the `_#value` method is
  * directly or indirectly included in the build.
  *
- * In addition to lodash methods, wrappers have `Array` and `String` methods.
+ * In addition to stvTools methods, wrappers have `Array` and `String` methods.
  *
  * The wrapper `Array` methods are:
  * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
@@ -105,8 +105,8 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * @name _
  * @constructor
  * @category Seq
- * @param {*} value The value to wrap in a `lodash` instance.
- * @returns {Object} Returns the new `lodash` wrapper instance.
+ * @param {*} value The value to wrap in a `stvTools` instance.
+ * @returns {Object} Returns the new `stvTools` wrapper instance.
  * @example
  *
  * function square(n) {
@@ -128,20 +128,20 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * _.isArray(squares.value());
  * // => true
  */
-function lodash(value) {
+function stvTools(value) {
   if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
-    if (value instanceof LodashWrapper) {
+    if (value instanceof StvToolsWrapper) {
       return value;
     }
     if (hasOwnProperty.call(value, '__wrapped__')) {
       return wrapperClone(value);
     }
   }
-  return new LodashWrapper(value);
+  return new StvToolsWrapper(value);
 }
 
-// Ensure wrappers are instances of `baseLodash`.
-lodash.prototype = baseLodash.prototype;
-lodash.prototype.constructor = lodash;
+// Ensure wrappers are instances of `baseStvTools`.
+stvTools.prototype = baseStvTools.prototype;
+stvTools.prototype.constructor = stvTools;
 
-module.exports = lodash;
+module.exports = stvTools;

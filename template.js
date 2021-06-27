@@ -60,7 +60,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * for easier debugging.
  *
  * For more information on precompiling templates see
- * [lodash's custom builds documentation](https://lodash.com/custom-builds).
+ * [stvTools's custom builds documentation](https://stvTools.com/custom-builds).
  *
  * For more information on Chrome extension sandboxes see
  * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).

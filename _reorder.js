@@ -1,7 +1,7 @@
 var copyArray = require('./_copyArray'),
     isIndex = require('./_isIndex');
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

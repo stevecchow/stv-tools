@@ -3,7 +3,7 @@ var composeArgs = require('./_composeArgs'),
     replaceHolders = require('./_replaceHolders');
 
 /** Used as the internal argument placeholder. */
-var PLACEHOLDER = '__lodash_placeholder__';
+var PLACEHOLDER = '__stvTools_placeholder__';
 
 /** Used to compose bitmasks for function metadata. */
 var WRAP_BIND_FLAG = 1,
@@ -13,7 +13,7 @@ var WRAP_BIND_FLAG = 1,
     WRAP_ARY_FLAG = 128,
     WRAP_REARG_FLAG = 256;
 
-/* Built-in method references for those with the same name as other `lodash` methods. */
+/* Built-in method references for those with the same name as other `stvTools` methods. */
 var nativeMin = Math.min;
 
 /**

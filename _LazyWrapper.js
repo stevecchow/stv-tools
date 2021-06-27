@@ -1,5 +1,5 @@
 var baseCreate = require('./_baseCreate'),
-    baseLodash = require('./_baseLodash');
+    baseStvTools = require('./_baseStvTools');
 
 /** Used as references for the maximum length and index of an array. */
 var MAX_ARRAY_LENGTH = 4294967295;
@@ -21,8 +21,8 @@ function LazyWrapper(value) {
   this.__views__ = [];
 }
 
-// Ensure `LazyWrapper` is an instance of `baseLodash`.
-LazyWrapper.prototype = baseCreate(baseLodash.prototype);
+// Ensure `LazyWrapper` is an instance of `baseStvTools`.
+LazyWrapper.prototype = baseCreate(baseStvTools.prototype);
 LazyWrapper.prototype.constructor = LazyWrapper;
 
 module.exports = LazyWrapper;
